@@ -1,0 +1,19 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "RSS-reader - service for aggregation of RSS-streams with the help of which it is convenient to read various sources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiyazGaripov/frontend-project-11.git"
+  },
+  "author": "Niyaz Garipov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiyazGaripov/frontend-project-11/issues"
+  },
+  "homepage": "https://github.com/NiyazGaripov/frontend-project-11#readme"
+}
