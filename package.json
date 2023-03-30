@@ -16,6 +16,9 @@
     "url": "https://github.com/NiyazGaripov/frontend-project-11/issues"
   },
   "homepage": "https://github.com/NiyazGaripov/frontend-project-11#readme",
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "eslint": "^8.37.0",
     "eslint-config-airbnb-base": "^15.0.0",
