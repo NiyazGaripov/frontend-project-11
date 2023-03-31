@@ -2,6 +2,9 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const path = require('path');
 
+const isProd = process.env.NODE_ENV === 'production';
+const isDev = !isProd;
+const createFileName = (ext) => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
 export default {
   mode: process.env.NODE_ENV || 'development',
   entry: './src/index.js',
