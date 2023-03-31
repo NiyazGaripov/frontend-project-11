@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "RSS-reader - service for aggregation of RSS-streams with the help of which it is convenient to read various sources",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
