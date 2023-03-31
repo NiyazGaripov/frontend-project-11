@@ -4,19 +4,19 @@ const path = require('path');
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
-const createFileName = (ext) => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
+const createFileName = (ext) => (isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`);
 export default {
   mode: process.env.NODE_ENV || 'development',
   entry: './src/index.js',
   output: {
-    filename: 'bundle.js',
+    filename: createFileName('js'),
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  devtool: 'source-map',
+  devtool: isDev ? 'source-map' : false,
   devServer: {
     port: 3000,
-    hot: false,
+    hot: isDev,
   },
   plugins: [
     new HtmlWebpackPlugin({
