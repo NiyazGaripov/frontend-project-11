@@ -1,9 +1,5 @@
-import { fileURLToPath } from 'url';
-import path, { dirname } from 'path';
+import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
