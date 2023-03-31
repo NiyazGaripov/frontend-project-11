@@ -13,7 +13,7 @@ export default {
   entry: './src/index.js',
   output: {
     filename: createFileName('js'),
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     clean: true,
   },
   devtool: isDev ? 'source-map' : false,
