@@ -1,5 +1,9 @@
-import path from 'path';
+import { fileURLToPath } from 'url';
+import path, { dirname } from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
@@ -9,7 +13,7 @@ export default {
   entry: './src/index.js',
   output: {
     filename: createFileName('js'),
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'public'),
     clean: true,
   },
   devtool: isDev ? 'source-map' : false,
