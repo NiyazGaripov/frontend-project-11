@@ -11,3 +11,6 @@ Rss Reader is a service for aggregating RSS feeds, with which it is convenient t
 
 ## Goal
 To develop a comprehensive understanding and practical skill set in front-end development, including knowledge of DOM manipulation, working with forms, implementing the MVC design pattern, handling HTTP requests with Ajax, and using build tools such as Webpack, in order to create high-quality web applications without using frameworks.
+
+## Production Deployments
+https://frontend-project-11-one-pied.vercel.app
